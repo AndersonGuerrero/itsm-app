@@ -3,6 +3,7 @@
 In the root directory
 * Install dependencies: `yarn install`
 * Ejecute: `react-native link react-native-gesture-handler`
+* Ejecute: `react-native link react-native-vector-icons`
 
 * Install dependencies: `yarn start`
 
