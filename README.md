@@ -1,8 +1,10 @@
 # React Native  Itsm App
 
 In the root directory
-* Install dependencies: `npm install`
-* Install dependencies: `npm start`
+* Install dependencies: `yarn install`
+* Ejecute: `react-native link react-native-gesture-handler`
+
+* Install dependencies: `yarn start`
 
 ### iOS
 
