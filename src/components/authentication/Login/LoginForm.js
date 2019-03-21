@@ -2,13 +2,20 @@ import React, { Component } from 'react';
 import {
     View, TextInput,
     TouchableOpacity,
-    StyleSheet, Text
+    Text, Picker
 } from 'react-native';
 import styles from './styles';
 // import Icon from 'react-native-vector-icons/Ionicons';
 
 
 class LoginForm extends Component {
+
+    constructor(props){
+        super(props);
+        this.state = {
+            language: 1
+        }
+      }
 
     onButtonPress = ()=>{
     this.props.navigation.navigate(url)
@@ -30,6 +37,16 @@ class LoginForm extends Component {
                               placeholder='Password' 
                               placeholderTextColor='#d3d3d3' 
                               secureTextEntry/>
+                
+                <Picker
+                    selectedValue={this.state.language}
+                    style = {styles.select}  
+                    onValueChange={(itemValue, itemIndex) =>
+                        this.setState({language: itemValue})
+                    }>
+                    <Picker.Item label="Sistema" value="1" />
+                    <Picker.Item label="Active Directory" value="0" />
+                </Picker>
 
                 <TouchableOpacity style={styles.buttonContainer} 
                                     onPress={this.onButtonPress}>

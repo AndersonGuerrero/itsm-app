@@ -28,5 +28,9 @@ export default StyleSheet.create({
         color: '#fff',
         textAlign: 'center',
         fontWeight: '700'
+    },
+    select:{
+        height: 50,
+        width: '100%',
     }
 });

@@ -9,8 +9,8 @@ import styles from './styles'
 
 
 class Login extends Component {
-  constructor(){
-    super()
+  constructor(props){
+    super(props);
     this.state = {
       hidden: false
     }
