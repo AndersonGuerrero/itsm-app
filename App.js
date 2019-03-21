@@ -6,9 +6,7 @@
  * @flow
  */
 
-import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
-import Modules from './src/components/modules';
+// import {Platform, StyleSheet, Text, View} from 'react-native';
 
 // const instructions = Platform.select({
 //   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -17,22 +15,13 @@ import Modules from './src/components/modules';
 //     'Shake or press menu button for dev menu',
 // });
 
-type Props = {};
-export default class App extends Component<Props> {
+import React, {Component} from 'react';
+import Navigator from './src/navigation/authentication';
+
+export default class App extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Modules/>
-      </View>
+      <Navigator/>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    backgroundColor: '#FFF',
-    
-  }
-});
