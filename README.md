@@ -1,12 +1,12 @@
 # React Native  Itsm App
 
 In the root directory
-* Install dependencies: `sudo yarn add global react-native-cli`
-* Install dependencies: `yarn`
+* Install dependencies: `sudo npm -g install react-native-cli`
+* Install dependencies: `npm install`
 * Ejecute: `react-native link react-native-gesture-handler`
 * Ejecute: `react-native link react-native-vector-icons`
 
-* Install dependencies: `yarn start`
+* Install dependencies: `npm start`
 
 ### iOS
 
